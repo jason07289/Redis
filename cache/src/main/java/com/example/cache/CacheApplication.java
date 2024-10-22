@@ -21,8 +21,8 @@ public class CacheApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		userRepository.save(User.builder().name("noa").email("noa@fastcampus.co.kr").build());
-		userRepository.save(User.builder().name("bob").email("bob@fastcampus.co.kr").build());
-		userRepository.save(User.builder().name("greg").email("greg@fastcampus.co.kr").build());
+//		userRepository.save(User.builder().name("noa").email("noa@fastcampus.co.kr").build());
+//		userRepository.save(User.builder().name("bob").email("bob@fastcampus.co.kr").build());
+//		userRepository.save(User.builder().name("greg").email("greg@fastcampus.co.kr").build());
 	}
 }

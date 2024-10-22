@@ -1,8 +1,7 @@
 package com.example.cache.domain.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -13,6 +12,8 @@ import java.time.LocalDateTime;
 @EntityListeners(value = AuditingEntityListener.class)
 @Getter
 @Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,4 +32,5 @@ public class User {
     @Column
     @LastModifiedDate
     private LocalDateTime updatedAt;
+
 }
