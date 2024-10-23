@@ -1,0 +1,17 @@
+{
+	"ulid": "01JAVE60M3Y5TN3HQXYTYD3B44",
+	"minTime": 1729588613576,
+	"maxTime": 1729591200000,
+	"stats": {
+		"numSamples": 29794,
+		"numSeries": 796,
+		"numChunks": 796
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JAVE60M3Y5TN3HQXYTYD3B44"
+		]
+	},
+	"version": 1
+}
